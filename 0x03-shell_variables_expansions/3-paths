@@ -1,2 +1,4 @@
 #!/bin/bash
-echo $(('echo $path" | grep -0 ":"/ | wc -l' +1))
+path=$PATH
+count=$(echo "$path" | tr ':' '\n' | wc -l)
+echo "$count"
