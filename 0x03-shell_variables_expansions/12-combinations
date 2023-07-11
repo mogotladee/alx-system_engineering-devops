@@ -1,0 +1,2 @@
+#!/bin/bash
+echo {a..z}{a..n}' '$'\n''{a..z}{p..z}' | grep -v 'oo'
